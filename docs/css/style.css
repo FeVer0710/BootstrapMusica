@@ -1,0 +1,227 @@
+body{
+	font-family: 'Monserrat',sans-serif;
+
+}
+
+.bg-danger{
+	background-color: #f53756!important;
+
+
+}
+.bg-success {
+	background-color: #4cb8b3!important;
+
+}
+.bg-warning {
+	background-color: #fef46d!important;
+
+}
+ .bg-secondary{
+ 	background-color: #752f97!important;
+ }
+
+
+
+
+ /*navegacion*/
+
+ .fixed-top{
+ 	transition: all .5s ease;
+ }
+ .fixed-top.bg-success{
+ 	-webkit-box-shadow: 0px 14px 28px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 14px 28px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 14px 28px -8px rgba(0,0,0,0.75);
+ }
+.fixed-top .nav-link{
+	color: white!important;
+
+}
+
+.fixed-top .active{
+	background-color: #752f97!important;
+}
+
+.navbar-brand {
+	font-size: 1.8rem;
+	font-weight: 400;
+
+}
+
+.navbar-brand span{
+	
+	font-weight: 900;
+
+}
+a.navbar-brand.text-light:hover{
+	color: #ffffff!important;
+
+}
+
+
+
+
+/*posicionar el texto delante del video*/
+
+.embed-responsive{
+	position: relative;/*se pone como relavive el que va debajo*/
+	background-image: url(../img/1.jpg);
+	height: 50rem;
+	background-position: center center;
+}
+
+.informacion-concierto{
+	position: absolute;
+	top: 20%;
+	z-index: 100;
+
+
+}
+
+/*que el video ocupe todo y no se vea el fondo*/
+
+@media(min-width: 992px){
+
+	.embed-responsive{
+
+		background-image: unset; /*elimina el fondo en pantalla grande*/
+		height: auto; /* esta es la magia de que se ponga completo*/
+
+	}
+   
+
+}
+
+/*gradiente*/
+
+.embed-responsive::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+
+}
+
+@media (min-width: 992px){
+	.informacion-concierto{
+		top: 35%;
+
+	}
+}
+
+
+.informacion-concierto h1{
+	font-size: 3rem;
+	line-height: 6rem;
+
+
+}
+
+.informacion-concierto h1 span,
+.informacion-concierto p{
+	font-weight: 700;
+
+		/*sombra ccsmatic*/
+-webkit-box-shadow: 15px 10px 38px 26px rgba (0,255,102,1);
+-moz-box-shadow: 15px 10px 38px 26px rgba (0,255,102,1);
+caja de sombra: 15px 10px 38px 26px rgba (0,255,102,1);
+
+
+}
+
+.informacion-concierto p{
+	font-size: 2rem;
+
+
+
+} 
+
+.informacion-concierto .text-dark,
+.sobre-festival .text-dark {
+	color: #f53756!important;
+	font-weight: 700;
+
+}
+
+
+
+/*lineup*/
+
+.separador::after{
+	content: '';
+	display: block;
+	height: 120px;
+	width: 300px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 120px;
+	margin: 0  auto;/*alinea al centro*/
+
+
+
+}
+.rock::after{
+	background-image: url(../img/3.png);
+
+}
+
+.dj::after{
+background-image: url(../img/4.png);
+}
+
+/*lineas*/
+/*:nth-child permite decirle un patron *****************magia*/
+
+.horario.bg-warning li:nth-child(2n+2){
+background-color: #eae05b!important;
+     }
+
+
+
+.horario.bg-success li:nth-child(2n+2){
+
+	background-color: #3ca8a2!important;
+}
+
+/* estilos de la fecha*/
+
+.fecha{
+	font-size: 1.8rem;
+
+}
+
+.fecha span{
+	font-weight: 700;
+
+}
+
+.fecha span::before{
+	content: '-';
+}
+
+/*quitar el primer guion*/
+
+.fecha span:first-child::before{
+	display: none;
+
+}
+
+/*tikets*/
+
+.boletos .precio{
+	font-size: 2rem;
+
+}
+.boletos .active{
+	background-color: #752f97!important;
+	border-color: #752f97!important;
+
+}
+
+.list-group-item-success{
+	background-color: #4cb8b3!important;
+
+}
